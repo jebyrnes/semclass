@@ -1,0 +1,29 @@
+---
+title: "Before the Class"
+---
+
+Hello everyone! I’m looking forward to our upcoming journey into the wild world of Structural Equation Modeling together. Before the class begins, I want to make sure you all are prepared so that you can get the most out of it and to have you work through this preclass-excercise and tutorial.
+  
+The course is going to be a mixture of lecture and hands-on exercises. Aside from model building and identification exercises, everything else will be in R. I am going to assume that you have at least basic proficiency in R. You will need basic proficiency in order to work through the the class. What does basic proficiency mean? I expect that
+  
+0. You have R installed on your computer and be able to access help files.
+1. You can install and load new libraries, as shown in the preclass tutorial.
+2. You are able to load in data files as shown in the preclass tutorial.
+3. You can plot a relationship between two variables from your data.
+4. You can perform a basic linear regression, and get summary statistics for parameter fits and F-tests.
+  
+I would then ask that you [run this script](./scripts/Install_Required_Packages.R) to install the packages for the course. If you have any questions, [contact me](mailto:jarrett.byrnes@umb.edu).
+
+Last, if you'd like, try out this [preclass lavaan exercise](./files/Preclass_lavaan_exercise.zip) to start to get a feel for some of what we'll be doing.
+
+
+**But I don’t know R!**
+If you cannot do the things in the list above, there are a few remedies. Note, you *must* do one or more of following. As this is a short, sharp, hands-on workshop, if you are not able to work in R, you won’t get nearly as much out of the workshop as you would have otherwise. So, one or more of the following should get you prepped and ready.  
+  
+- Find a <a href="https://datacarpentry.org/">Data Carpentry</a> workshop nearby that is teaching R. If you're thinking of organizing a course, and know you will have a number of learners who are not R proficient, even consider hosting one of these workshops a few weeks before my workshop. It's a great way to start building a community of practice.  
+  
+- Try an interactive tutorial. There is a great interactive tutorial for R, called [Swirl!](https://swirlstats.com/) So, run, do not walk, on over to [their website](https://swirlstats.com/) and go through the process to install R and Swirl. Then, go through the “R Programming” module and the “Data Analysis” module at bare minimum (see here if they don’t load automatically). The “Regression Models” module will also likely be very helpful.  
+  
+- Work through the [Data Carpentry Ecology curriculum](https://datacarpentry.org/R-ecology-lesson/) - this is a stellar set of lessons that I use in many of my own classes (and sometimes teach).  
+  
+- Work through the lab handouts for weeks 1, 3, 5, and 6 of [my own intro biostats course](https://biol607.github.io/schedule.html). It's what I teach, and those weeks provide you with the background you need for this course - and beyond. Feel free to try out other lessons to build your chops.

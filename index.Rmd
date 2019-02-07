@@ -1,0 +1,43 @@
+---
+title: "Structural Equation Modeling for Ecology and Evolutionary Biology"
+---
+
+<center>
+```{r demoplot, fig.align='center', echo=FALSE, fig.height=4, fig.width=6,  warning=FALSE, message=FALSE, comment=NA}
+library(DiagrammeR)
+
+library(piecewiseSEM)
+data(keeley)
+
+mod <- psem(lm(abiotic ~ distance, data = keeley),
+            lm(hetero ~ distance, data = keeley),
+            lm(age ~ distance, data = keeley),
+            lm(firesev ~ age, data = keeley),
+            lm(cover ~ firesev, data = keeley),
+            lm(rich ~ hetero + cover + abiotic, data = keeley),
+            data = keeley)
+
+source("./scripts/plot_psem.R")
+
+plt <- plot.psem(mod, 
+          node_attrs =list(
+          x = c(3, 3, 2, 3, 4, 5, 1),
+          y = c(1, 2, 0, 0, 0, 1, 1),
+          shape = "rectangle", color = "black",
+          fillcolor = "white"),
+          return = TRUE)
+
+render_graph(plt)
+
+```
+</center>
+
+**Instructor:** Jarrett Byrnes, PhD.
+
+**Email:** jarrett.byrnes@umb.edu
+
+
+**Source for this Website:** https://github.com/jebyrnes/semclass
+&nbsp;  
+&nbsp;  
+&nbsp;  

@@ -1,0 +1,35 @@
+---
+title: "Publications from Past Classes"
+---
+
+Aller, E. A., N. S. Jiddawi, and J. S. Eklöf. 2017. Marine protected areas increase temporal stability of community structure, but not density or diversity, of tropical seagrass fish communities. PloS one 12:e0183999.  
+  
+Alsterberg, C., J. S. Eklöf, L. Gamfeldt, J. N. Havenhand, and K. Sundbäck. 2013. Consumers mediate the effects of experimental ocean acidification and warming on primary producers. PNAS:201303797.  
+  
+Austin, Å. N., J. P. Hansen, S. Donadi, and J. S. Eklöf. 2017. Relationships between aquatic vegetation and water turbidity: A field survey across seasons and spatial scales. PloS one 12:e0181419.  
+  
+Donadi, S., Å. N. Austin, U. Bergström, B. K. Eriksson, J. P. Hansen, P. Jacobson, G. Sundblad, M. van Regteren, and J. S. Eklof. 2017. A cross-scale trophic cascade from large predatory fish to algae in coastal ecosystems. Proceedings of the Royal Society B: Biological Sciences 284:20170045.  
+  
+DuBois K., Abbott J.M., Williams S.L., Stachowicz J.J. In Review. Relative performance of eelgrass genotypes shifts during extreme warming event: disentangling the roles of multiple traits. Marine Ecology Progress Series.  
+  
+Duffy, J. E., P. L. Reynolds, C. Boström, J. A. Coyer, M. Cusson, S. Donadi, J. G. Douglass, J. S. Eklöf, A. H. Engelen, B. K. Eriksson, S. Fredriksen, L. Gamfeldt, C. Gustafsson, G. Hoarau, M. Hori, K. Hovel, K. Iken, J. S. Lefcheck, P.-O. Moksnes, M. Nakaoka, M. I. O’Connor, J. L. Olsen, J. P. Richardson, J. L. Ruesink, E. E. Sotka, J. Thormar, M. A. Whalen, and J. J. Stachowicz. 2015. Biodiversity mediates top–down control in eelgrass ecosystems: a global comparative-experimental approach. Ecology Letters 18:696–705.  
+  
+Frainer A., Polvi L., Jansson R., McKie B.G. 2018. Enhanced ecosystem functioning following stream restoration: the roles of habitat complexity and species traits. Journal of Applied Ecology, 55: 377-385.  
+  
+Frainer A., Mckie B.G. 2015. Shifts in the diversity and composition of consumer traits constrain the effects of land use on stream ecosystem functioning. Advances in Ecological Research, 52: 169-199.  
+  
+Frainer A., Mckie B.G., Malmqvist B.G. 2014. When does diversity matter? Effects of species functional diversity on ecosystem functioning across habitats and seasons in a stream field experiment. Journal of Animal Ecology, 86: 460-469.  
+  
+Fuller L., Fuentes-Montemayor, E., Watts, K., Macgregor, N., Bitenc K., and Park K.J. 2018. Local-scale attributes determine the suitability of woodland creation sites for Diptera. Journal of Applied Ecology 55, 1173-1184.  
+  
+García-Palacios P., McKie B.G., Handa I.T., Frainer A., Hättenschwiler S. 2016. The importance of litter traits and decomposers for litter decomposition: A comparison of aquatic and terrestrial ecosystems within and across biomes. Functional Ecology, 30: 819-829.  
+  
+Grace, J.B., Johnson, D.J., Lefcheck, J.S., Byrnes, J.E.K., 2018. Quantifying relative importance: computing standardized effects in models with binary outcomes. Ecosphere 9, e02283.
+  
+Lefcheck, J. S. 2016. piecewiseSEM: Piecewise structural equation modeling in R for ecology, evolution, and systematics. Methods in Ecology and Evolution 7:573–579.
+  
+Pattison, Z., Whytock, R. abd Willby, N. 2017. Invasion legacy effects versus sediment deposition as drivers of riparian vegetation. Biological Invasions. 20: 1189–1198.
+  
+Sorte, C., and J. J. Stachowicz. 2011. Patterns and processes of compositional change in a California epibenthic community. Marine Ecology Progress Series 435:63–74.
+  
+Whytock R.C., Fuentes-Montemayor E., Watts K., Barbosa De Andrade, P., Whytock, R., French, P., Macgregor, N., and Park K.J. 2018. Bird community responses to habitat creation in a long-term, large-scale natural experiment. Conservation Biology 32, 345-354.  

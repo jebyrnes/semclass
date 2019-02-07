@@ -1,0 +1,23 @@
+name: "Structural Equation Modeling for Ecology and Evolutionary Biology"
+
+navbar:
+ title: ""
+ left:
+  - text: "Home"
+    href: index.html
+  - text: "Overview"
+    href: overview.html
+  - text: "Before the Class"
+    href: before.html
+  - text: "Schedule"
+    href: schedule.html
+  - text: "Publications from the Class"
+    href: publications.html
+  - text: "Additional Resources"
+    href: resources.html
+
+
+output:
+  html_document:
+    theme: sandstone
+output_dir: "."

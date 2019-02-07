@@ -1,0 +1,28 @@
+---
+title: "Additional Resources"
+---
+
+### Packages We Use
+[piecewiseSEM](http://jslefche.github.io/piecewiseSEM/)  
+[lavaan](http://lavaan.ugent.be)  
+[brms](https://github.com/paul-buerkner/brms)  
+[DiagrammeR](http://visualizers.co/diagrammer/)  
+
+### Mailing Lists
+[sem for biology](https://groups.google.com/forum/#!forum/sem_for_biology) (for this class)  
+[lavaan google group](https://groups.google.com/forum/#!forum/lavaan)  
+[semnet](https://listserv.ua.edu/archives/semnet.html)  
+
+### R
+[R for Data Science](https://r4ds.had.co.nz) Wickham and Gromelund. Essential reading.  
+[Getting used to R, RStudio, and R Markdown](https://ismayc.github.io/rbasics-book/index.html) 2017. Chester Ismay. The basics.  
+[R Programming for Data Science](https://bookdown.org/rdpeng/rprogdatascience/). 2016. Roger D. Peng. Provides a more detailed intro to basic R programming.  
+[Exploratory Data Analysis with R](https://bookdown.org/rdpeng/exdata/). 2016. Roger D. Peng. Uses the tidyverse and ggplot2 for data exploration. Great introduction to these packages and how they can be made to sing together.  
+[Efficient R Programming](https://bookdown.org/csgillespie/efficientR/). 2016.  Colin Gillespe and Robin Lovelace\
+[Statistical Inference for Data Science](https://leanpub.com/LittleInferenceBook/read). 2018. Brian Caffo. A wonderful book that is a companion to his Coursera course, but is open, and full of gret concepts and R examples.\
+[Regression Models for Data Science in R](https://leanpub.com/regmods/read). 2018. Brian Caffo. A wonderful primer on regression models. Incredibly thorough.\
+[Advanced R](http://adv-r.had.co.nz/). 2014. Great walkthrough of the details and guts of R. From novices to R wizards, you will learn things you never thought possible (or the actual reasoning behind that hacky stuff you've been doing for years).\
+[Principles of Econometrics with  R](https://bookdown.org/ccolonescu/RPoE4/) 2016. Constantin Colonescu. Yes, it's econometrics, but there's a lot here that's very generalizable to biological data analysis in R as well.\
+[A Tour of Time Series Analysis with R](http://tts.smac-group.com/)  
+[Fundamentals of Data Visualization](http://serialmentor.com/dataviz/). 2018. Claus Wilke. A wonderful online collection of best principles and practices for data viz.  
+[Forecasting: Principles and Practice](http://otexts.org/fpp2/). 2018. Rob Hyndman and George Athanasaopoules. A great intro to timeseries and forecasting in R.  

@@ -1,0 +1,45 @@
+---
+title: "Coure Schedule"
+---
+
+
+## Day 1  
+__Overview:__  
+__Lectures:__  
+__Code:__  
+__Readings:__  
+\
+\
+
+## Day 2  
+__Overview:__  
+__Lectures:__  
+__Code:__  
+__Readings:__  
+\
+\
+
+## Day 3  
+__Overview:__  
+__Lectures:__  
+__Code:__  
+__Readings:__  
+\
+\
+
+## Day 4  
+__Overview:__  
+__Lectures:__  
+__Code:__  
+__Readings:__  
+\
+\
+
+## Day 5  
+__Overview:__  
+__Lectures:__  
+__Code:__  
+__Readings:__  
+\
+\
+

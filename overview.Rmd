@@ -1,0 +1,8 @@
+---
+title: "Course Overview"
+---
+Many problems in ecology and evolutionary biology require understanding of the relationships among variables and examining their relative influences and responses. For example, over the last few decades ecologists have been trying to quantify the relative importance of top-down control by predation and herbivory vs. bottom-up control by nutrients and recruitment driving food web dynamics. Rather than arguing which of these forces are more important, we can examine the relative importance of each and how these forces interact to influence food web dynamics.  
+  
+Structural Equation Modeling (SEM) or path analysis is a multivariate technique that can test for the nature and magnitude of direct and indirect effects of multiple interacting factors. SEM is an approach that interprets information about the observed correlations among the traits of organisms or groups of organisms in order to evaluate complex causal relationships. It is a rich technique that is particularly well suited for large-scale observational community or population data sets. Its intuitive connection to how we conceive of our study systems makes it a powerful and useful technique for ecologists and evolutionary biologists.   
+  
+The goal of this workshop is to familiarize ecologists the basic techniques of SEM using R. The course will teach students how to build a good causal model for use with SEM, how to fit that model using covariance, piecewise, and Bayesian approaches. Students will also present SEM analyses of their own data - so come ready to work!
