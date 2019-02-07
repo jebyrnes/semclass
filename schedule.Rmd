@@ -3,43 +3,53 @@ title: "Coure Schedule"
 ---
 
 
-## Day 1  
-__Overview:__  
-__Lectures:__  
+## Day 1. Introduction to SEM
+__Overview:__  We discuss just what is SEM. Along the way we'll discuss it's origins, give a general example of moving from a traditional ANOVA-esque framework, and finally discuss how to build a well-justified causal model. Causality will be central, and we won't pull any punches! We'll end the day by starting to talk about how to fit SEMs using likelihood using covariance-based estimation with likelihood.  
+__Lectures:__  What is SEM? A Practical and Historical Overview  
+	&nbsp; &nbsp; &nbsp; &nbsp; Building Multivariate Causal Models  
+	&nbsp; &nbsp; &nbsp; &nbsp; Engines of SEM: Covariance-Based Estimation  
 __Code:__  
-__Readings:__  
+__Readings:__  Grace 2010 (overview), Whalen et al. 2013 (example) (note: semclass/semclass for pdfs)
+__Optional Reading:__ Matsueda 2012 (history), Pearl 2012a (history of causality)
 \
 \
 
-## Day 2  
-__Overview:__  
-__Lectures:__  
+## Day 2. Covariance Based SEM  
+__Overview:__  We'll pick up where we left off discussing covariance-based estimation. We'll spend time discussing how we evaluate an SEM and what we report. We'll end the day exploring the concept of latent variables - variables for which we do not actually have a measured variable, but for which we have one or more indicators.  
+__Lectures:__  Engines of SEM: Covariance-Based Estimation  
+	&nbsp; &nbsp; &nbsp; &nbsp; What does it mean to evaluate a multivariate hypothesis?  
+	&nbsp; &nbsp; &nbsp; &nbsp; Latent Variable models  
 __Code:__  
-__Readings:__  
+__Readings:__  Grace and Bollen 2005
 \
 \
 
-## Day 3  
-__Overview:__  
-__Lectures:__  
+## Day 3. Piecewise SEM  
+__Overview:__  We move beyond covariance based techniques into local estimation techniques that embrace the graph theoretic approach to SEM via the `piecewiseSEM` package by Jon Lefcheck.  
+__Lectures:__  	Engines of SEM: Local Estimation with piecewiseSEM  
+	&nbsp; &nbsp; &nbsp; &nbsp; A Nonlinear, Non-normal world  
+	&nbsp; &nbsp; &nbsp; &nbsp; Mixed Models in SEM  
+	&nbsp; &nbsp; &nbsp; &nbsp; Categorical Variables and Multigroup Analysis  
 __Code:__  
-__Readings:__  
+__Readings:__  Shipley 2004, Lefcheck 2016
 \
 \
 
-## Day 4  
-__Overview:__  
-__Lectures:__  
+## Day 4. Special Topics in SEM  
+__Overview:__  This day varies quite a bit, depending on the current class. It's a potpurri of more advances topics, not all of which will be covered.  
+__Lectures:__  Engines of SEM: Bayesian SEM  
+	&nbsp; &nbsp; &nbsp; &nbsp; Spatial Data in SEM  
+	&nbsp; &nbsp; &nbsp; &nbsp; Timseries and Temporal Autocorrelation in SEM  
+	&nbsp; &nbsp; &nbsp; &nbsp; Whole-System Prediction with SEM  
+	&nbsp; &nbsp; &nbsp; &nbsp; Composite Variables   
 __Code:__  
-__Readings:__  
+__Readings:__   Oberski 2014, Grace et al. 2010,
 \
 \
 
-## Day 5  
-__Overview:__  
-__Lectures:__  
-__Code:__  
-__Readings:__  
+## Day 5. Open Lab and Presentations  
+__Overview:__  In the morning, we'll have an open lab. Students will work on their own data and projects with an aim to building a 2-3 slide powerpoint presentation detailing 1. The problem/system, 2. The model they built, and 3. The Final result and any challenges. We'll present these in the afternoon, hopefully in a convivial atmosphere, after a brief primer on warming up for a talk you are nervous about!  
+__Lectures:__  How to fool yourself with SEM!
 \
 \
 
