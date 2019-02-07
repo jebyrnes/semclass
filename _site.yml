@@ -11,6 +11,8 @@ navbar:
     href: before.html
   - text: "Schedule"
     href: schedule.html
+  - text: "Readings"
+    href: readings.html
   - text: "Publications from the Class"
     href: publications.html
   - text: "Additional Resources"

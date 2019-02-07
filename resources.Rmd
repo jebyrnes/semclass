@@ -2,6 +2,18 @@
 title: "Additional Resources"
 ---
 
+### Useful Books
+James B. Grace.  2006.  Structural Equation Modeling and Natural Systems. Cambridge University Press. [<a href="http://www.amazon.com/Structural-Equation-Modeling-Natural-Systems/dp/0521546532/">amazon</a>]<br />
+<br />
+Ken A. Bollen. 1989. Structural Equations with Latent Variables. Wiley Press.[<a href="http://www.amazon.com/Structural-Equations-Latent-Variables-Kenneth/dp/0471011711/">amazon</a>]<br />
+<br />
+Rex B. Kline.  2010.  Principles and Practice of Structural Equation Modeling.  The Guilford Press. [<a href="http://www.amazon.com/Principles-Practice-Structural-Equation-Methodology/dp/1606238760/">amazon</a>]<br />
+<br />
+Bill Shipley.  2000. Cause and Correlation in Biology. Cambridge University Press. [<a href="http://www.amazon.com/Cause-Correlation-Biology-Structural-Equations/dp/0521529212/">amazon</a>]<br /><br />
+
+Rick H. Holyle, ed. 2012.  Handbook of Structural Equation Modeling. The Guilford Press. [<a href="http://www.amazon.com/Handbook-Structural-Equation-Modeling-Hoyle/dp/1606230778/ref=sr_1_2?ie=UTF8&qid=1332966925&sr=8-2">amazon</a>]
+
+
 ### Packages We Use
 [piecewiseSEM](http://jslefche.github.io/piecewiseSEM/)  
 [lavaan](http://lavaan.ugent.be)  
