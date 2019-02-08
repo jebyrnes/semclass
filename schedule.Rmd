@@ -6,8 +6,8 @@ The general schedule for the course is below. Please note, for readings the u/p 
 ## Day 1. Introduction to SEM
 __Overview:__  We discuss just what is SEM. Along the way we'll discuss it's origins, give a general example of moving from a traditional ANOVA-esque framework, and finally discuss how to build a well-justified causal model. Causality will be central, and we won't pull any punches! We'll end the day by starting to talk about how to fit SEMs using likelihood using covariance-based estimation with likelihood.  
 __Lectures:__  What is SEM? A Practical and Historical Overview  
-	&nbsp; &nbsp; &nbsp; &nbsp; Building Multivariate Causal Models  
-	&nbsp; &nbsp; &nbsp; &nbsp; Engines of SEM: Covariance-Based Estimation  
+	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Building Multivariate Causal Models  
+	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Engines of SEM: Covariance-Based Estimation  
 __Readings:__  [Grace 2010](http://byrneslab.net/classes/sem_pdfs/General/Grace%20et%20al%202010%20Ecological%20Monographs.pdf) (overview), [Whalen et al. 2013](http://byrneslab.net/classes/sem_pdfs/examples/Whalen_et_al_2013_Ecology.pdf) (example) (note: semclass/semclass for pdfs)  
 __Optional Reading:__ [Matsueda 2012](http://byrneslab.net/classes/sem_pdfs/General/Matsueda%202012%20history.pdf) (history), [Pearl 2012a](http://byrneslab.net/classes/sem_pdfs/causality/pearl-causality-review.pdf) (history of causality)
 \
@@ -16,8 +16,8 @@ __Optional Reading:__ [Matsueda 2012](http://byrneslab.net/classes/sem_pdfs/Gene
 ## Day 2. Covariance Based SEM  
 __Overview:__  We'll pick up where we left off discussing covariance-based estimation. We'll spend time discussing how we evaluate an SEM and what we report. We'll end the day exploring the concept of latent variables - variables for which we do not actually have a measured variable, but for which we have one or more indicators.  
 __Lectures:__  Engines of SEM: Covariance-Based Estimation  
-	&nbsp; &nbsp; &nbsp; &nbsp; What does it mean to evaluate a multivariate hypothesis?  
-	&nbsp; &nbsp; &nbsp; &nbsp; Latent Variable models  
+	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; What does it mean to evaluate a multivariate hypothesis?  
+	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Latent Variable models  
 __Readings:__  Grace and Bollen 2005
 \
 \
@@ -25,9 +25,9 @@ __Readings:__  Grace and Bollen 2005
 ## Day 3. Piecewise SEM  
 __Overview:__  We move beyond covariance based techniques into local estimation techniques that embrace the graph theoretic approach to SEM via the `piecewiseSEM` package by Jon Lefcheck.  
 __Lectures:__  	Engines of SEM: Local Estimation with piecewiseSEM  
-	&nbsp; &nbsp; &nbsp; &nbsp; A Nonlinear, Non-normal world  
-	&nbsp; &nbsp; &nbsp; &nbsp; Mixed Models in SEM  
-	&nbsp; &nbsp; &nbsp; &nbsp; Categorical Variables and Multigroup Analysis  
+	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A Nonlinear, Non-normal world  
+	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Mixed Models in SEM  
+	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Categorical Variables and Multigroup Analysis  
 __Readings:__  Shipley 2004, Lefcheck 2016
 \
 \
@@ -35,10 +35,10 @@ __Readings:__  Shipley 2004, Lefcheck 2016
 ## Day 4. Special Topics in SEM  
 __Overview:__  This day varies quite a bit, depending on the current class. It's a potpurri of more advances topics, not all of which will be covered.  
 __Lectures:__  Engines of SEM: Bayesian SEM  
-	&nbsp; &nbsp; &nbsp; &nbsp; Spatial Data in SEM  
-	&nbsp; &nbsp; &nbsp; &nbsp; Timseries and Temporal Autocorrelation in SEM  
-	&nbsp; &nbsp; &nbsp; &nbsp; Whole-System Prediction with SEM  
-	&nbsp; &nbsp; &nbsp; &nbsp; Composite Variables   
+	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Spatial Data in SEM  
+	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Timseries and Temporal Autocorrelation in SEM  
+	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Whole-System Prediction with SEM  
+	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Composite Variables   
 __Readings:__   Oberski 2014, Grace et al. 2010,
 \
 \
