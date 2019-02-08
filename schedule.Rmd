@@ -8,7 +8,7 @@ __Overview:__  We discuss just what is SEM. Along the way we'll discuss it's ori
 __Lectures:__  What is SEM? A Practical and Historical Overview  
 	&nbsp; &nbsp; &nbsp; &nbsp; Building Multivariate Causal Models  
 	&nbsp; &nbsp; &nbsp; &nbsp; Engines of SEM: Covariance-Based Estimation  
-__Readings:__  [Grace 2010](http://byrneslab.net/classes/sem_pdfs/General/Grace%20et%20al%202010%20Ecological%20Monographs.pdf) (overview), [Whalen et al. 2013](http://byrneslab.net/classes/sem_pdfs/examples/Whalen_et_al_2013_Ecology.pdf) (example) (note: semclass/semclass for pdfs)
+__Readings:__  [Grace 2010](http://byrneslab.net/classes/sem_pdfs/General/Grace%20et%20al%202010%20Ecological%20Monographs.pdf) (overview), [Whalen et al. 2013](http://byrneslab.net/classes/sem_pdfs/examples/Whalen_et_al_2013_Ecology.pdf) (example) (note: semclass/semclass for pdfs)  
 __Optional Reading:__ [Matsueda 2012](http://byrneslab.net/classes/sem_pdfs/General/Matsueda%202012%20history.pdf) (history), [Pearl 2012a](http://byrneslab.net/classes/sem_pdfs/causality/pearl-causality-review.pdf) (history of causality)
 \
 \
