@@ -50,6 +50,10 @@ install.packages("mvnormtest")
 
 install.packages("tidyverse")
 
+install.packages("lavaanPlot")
+
+install.packages("daggity")
+
 library(devtools)
 
 install_github("jslefche/piecewiseSEM@devel")
