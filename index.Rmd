@@ -32,7 +32,7 @@ render_graph(plt)
 ```
 </center>
 
-**Instructor:** Jarrett Byrnes, PhD.
+**Instructor:** [Jarrett Byrnes, PhD.](http://byrneslab.net)
 
 **Email:** jarrett.byrnes@umb.edu
 
@@ -41,3 +41,8 @@ render_graph(plt)
 &nbsp;  
 &nbsp;  
 &nbsp;  
+**About:** This website is for the one-week Intro to SEM for EEB in [R](http://r-project.org) intensive workshop that I've been developing and teaching since 2008. If you are interested in having such a workshop at your university or organization, please contact me at the email above. Otherwise, feel free to use the materials here as a free resource for self-teaching. Note, the materials here are in constant development; new code and methods are constantly being generated. It all mostly works (hey, the R generated graph above is a brand-new feature - you can see it has a bit of work to go), and is offered in the spirit of exploration and our joint adventure into more informative methods for telling stories from our data.  
+  
+For more, see the [overview](overview.html) page. To see what the course looks like, check out the [schedule](schedule.html) page. If you're interested in further material beyond what's offered here, check out the [resources](resources.html) page. And if you want some information on products that have grown out of the course, see the [publications](publications.html) page. I hope to one day list you there!  
+  
+Last, an acknowledgement of a huge dept to my fellow teachers [Jim Grace](https://www.usgs.gov/centers/wetland-and-aquatic-research-center/science/quantitative-analysis-using-structural-equation?qt-science_center_objects=0#qt-science_center_objects) and [Jon Lefcheck](https://jonlefcheck.net). Sometimes we teach this together, sometimes apart, and our materials go back and forth. Definitely click through to see their course materials and more.  
