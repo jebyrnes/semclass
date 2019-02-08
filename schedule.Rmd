@@ -1,16 +1,15 @@
 ---
 title: "Coure Schedule"
 ---
-
+The general schedule for the course is below. Please note, for readings the u/p is semclass for both. For code, please see [this dropbox](https://www.dropbox.com/sh/objbunt4wxdlnxb/AAB38yRdxi62BlMC1ca_SYPJa?dl=0) for a static view. During the course itself, I'll give you share access so that you can update files as things change. Please [run this script](./files/scripts/Install_Required_Packages.R) in R to install the packages you will need for the course before day 1.
 
 ## Day 1. Introduction to SEM
 __Overview:__  We discuss just what is SEM. Along the way we'll discuss it's origins, give a general example of moving from a traditional ANOVA-esque framework, and finally discuss how to build a well-justified causal model. Causality will be central, and we won't pull any punches! We'll end the day by starting to talk about how to fit SEMs using likelihood using covariance-based estimation with likelihood.  
 __Lectures:__  What is SEM? A Practical and Historical Overview  
 	&nbsp; &nbsp; &nbsp; &nbsp; Building Multivariate Causal Models  
 	&nbsp; &nbsp; &nbsp; &nbsp; Engines of SEM: Covariance-Based Estimation  
-__Code:__  
-__Readings:__  Grace 2010 (overview), Whalen et al. 2013 (example) (note: semclass/semclass for pdfs)
-__Optional Reading:__ Matsueda 2012 (history), Pearl 2012a (history of causality)
+__Readings:__  [Grace 2010](http://byrneslab.net/classes/sem_pdfs/General/Grace%20et%20al%202010%20Ecological%20Monographs.pdf) (overview), [Whalen et al. 2013](http://byrneslab.net/classes/sem_pdfs/examples/Whalen_et_al_2013_Ecology.pdf) (example) (note: semclass/semclass for pdfs)
+__Optional Reading:__ [Matsueda 2012](http://byrneslab.net/classes/sem_pdfs/General/Matsueda%202012%20history.pdf) (history), [Pearl 2012a](http://byrneslab.net/classes/sem_pdfs/causality/pearl-causality-review.pdf) (history of causality)
 \
 \
 
@@ -19,7 +18,6 @@ __Overview:__  We'll pick up where we left off discussing covariance-based estim
 __Lectures:__  Engines of SEM: Covariance-Based Estimation  
 	&nbsp; &nbsp; &nbsp; &nbsp; What does it mean to evaluate a multivariate hypothesis?  
 	&nbsp; &nbsp; &nbsp; &nbsp; Latent Variable models  
-__Code:__  
 __Readings:__  Grace and Bollen 2005
 \
 \
@@ -30,7 +28,6 @@ __Lectures:__  	Engines of SEM: Local Estimation with piecewiseSEM
 	&nbsp; &nbsp; &nbsp; &nbsp; A Nonlinear, Non-normal world  
 	&nbsp; &nbsp; &nbsp; &nbsp; Mixed Models in SEM  
 	&nbsp; &nbsp; &nbsp; &nbsp; Categorical Variables and Multigroup Analysis  
-__Code:__  
 __Readings:__  Shipley 2004, Lefcheck 2016
 \
 \
@@ -42,7 +39,6 @@ __Lectures:__  Engines of SEM: Bayesian SEM
 	&nbsp; &nbsp; &nbsp; &nbsp; Timseries and Temporal Autocorrelation in SEM  
 	&nbsp; &nbsp; &nbsp; &nbsp; Whole-System Prediction with SEM  
 	&nbsp; &nbsp; &nbsp; &nbsp; Composite Variables   
-__Code:__  
 __Readings:__   Oberski 2014, Grace et al. 2010,
 \
 \

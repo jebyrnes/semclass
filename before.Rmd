@@ -12,7 +12,7 @@ The course is going to be a mixture of lecture and hands-on exercises. Aside fro
 3. You can plot a relationship between two variables from your data.
 4. You can perform a basic linear regression, and get summary statistics for parameter fits and F-tests.
   
-I would then ask that you [run this script](./scripts/Install_Required_Packages.R) to install the packages for the course. If you have any questions, [contact me](mailto:jarrett.byrnes@umb.edu).
+I would then ask that you [run this script](./files/scripts/Install_Required_Packages.R) to install the packages for the course. If you have any questions, [contact me](mailto:jarrett.byrnes@umb.edu).
 
 Last, if you'd like, try out this [preclass lavaan exercise](./files/Preclass_lavaan_exercise.zip) to start to get a feel for some of what we'll be doing.
 
