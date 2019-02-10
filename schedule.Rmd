@@ -6,8 +6,12 @@ The general schedule for the course is below. Please note, for readings the u/p 
 ## Day 1. Introduction to SEM
 __Overview:__  We discuss just what is SEM. Along the way we'll discuss it's origins, give a general example of moving from a traditional ANOVA-esque framework, and finally discuss how to build a well-justified causal model. Causality will be central, and we won't pull any punches! We'll end the day by starting to talk about how to fit SEMs using likelihood using covariance-based estimation with likelihood.  
 __Lectures:__  [What is SEM? A Practical and Historical Overview](lecture_pdfs/SEM_Intro_And_History.pdf)  
-	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Building Multivariate Causal Models  
-	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Engines of SEM: Covariance-Based Estimation  
+	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+	[Anatomy of SEM](lecture_pdfs/Anatomy_of_SEM.pdf)  
+	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+	[Building Multivariate Causal Models](lecture_pdfs/Multivariate_Causal_Models.pdf), [code](files/scripts/multivariate_causal_models.R)  
+	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+	[Engines of SEM: Covariance-Based Estimation](lecture_pdfs/Intro_to_Likelihood_Fitting.pdf), [code](files/scripts/Likelihood_Fitting.R)  
 __Readings:__  [Grace 2010](http://byrneslab.net/classes/sem_pdfs/General/Grace%20et%20al%202010%20Ecological%20Monographs.pdf) (overview), [Whalen et al. 2013](http://byrneslab.net/classes/sem_pdfs/examples/Whalen_et_al_2013_Ecology.pdf) (example) (note: semclass/semclass for pdfs)  
 __Optional Reading:__ [Matsueda 2012](http://byrneslab.net/classes/sem_pdfs/General/Matsueda%202012%20history.pdf) (history), [Pearl 2012a](http://byrneslab.net/classes/sem_pdfs/causality/pearl-causality-review.pdf) (history of causality)
 \
