@@ -20,7 +20,7 @@ __Optional Reading:__ [Matsueda 2012](http://byrneslab.net/classes/sem_pdfs/Gene
 ## Day 2. Covariance Based SEM  
 __Overview:__  We'll pick up where we left off discussing covariance-based estimation. We'll spend time discussing how we evaluate an SEM and what we report. We'll end the day exploring the concept of latent variables - variables for which we do not actually have a measured variable, but for which we have one or more indicators.  
 __Lectures:__  Engines of SEM: Covariance-Based Estimation con't.  
-	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; What does it mean to evaluate a multivariate hypothesis?  
+	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [What does it mean to evaluate a multivariate hypothesis?](lecture_pdfs/Assesing_Likelihood_Fits.pdf), [code](files/scripts/Assessing_Likelihood.R)  
 	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Latent Variable models  
 __Readings:__  [Grace and Bollen 2005](http://byrneslab.net/classes/sem_pdfs/General/Grace & Bollen 2005 Bull Ecol Soc Amer.pdf)
 \
