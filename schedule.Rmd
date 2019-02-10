@@ -22,7 +22,7 @@ __Overview:__  We'll pick up where we left off discussing covariance-based estim
 __Lectures:__  Engines of SEM: Covariance-Based Estimation  
 	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; What does it mean to evaluate a multivariate hypothesis?  
 	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Latent Variable models  
-__Readings:__  Grace and Bollen 2005
+__Readings:__  Grace and Bollen 2005(http://byrneslab.net/classes/sem_pdfs/General/Grace & Bollen 2005 Bull Ecol Soc Amer.pdf)
 \
 \
 
