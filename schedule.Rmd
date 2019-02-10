@@ -1,5 +1,5 @@
 ---
-title: "Coure Schedule"
+title: "Course Schedule"
 ---
 The general schedule for the course is below. Please note, for readings the u/p is semclass for both. For code, please see [this dropbox](https://www.dropbox.com/sh/objbunt4wxdlnxb/AAB38yRdxi62BlMC1ca_SYPJa?dl=0) for a static view. During the course itself, I'll give you share access so that you can update files as things change. Please [run this script](./files/scripts/Install_Required_Packages.R) in R to install the packages you will need for the course before day 1.
 
