@@ -32,7 +32,7 @@ __Lectures:__  	Engines of SEM: Local Estimation with piecewiseSEM
 	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A Nonlinear, Non-normal world  
 	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Mixed Models in SEM  
 	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Categorical Variables and Multigroup Analysis  
-__Readings:__  Shipley 2004, Lefcheck 2016
+__Readings:__  [piecewiseSEM vignette](http://jslefche.github.io/piecewiseSEM/articles/piecewiseSEM.html), [Shipley 2009](http://byrneslab.net//classes/sem_pdfs/d-sep/Shipley%202009%20dsep%20with%20multilevel%20models.pdf), [Lefcheck 2016](http://byrneslab.net//classes/sem_pdfs/d-sep/Lefcheck_2016_piecewiseSEM.pdf)
 \
 \
 
@@ -43,7 +43,7 @@ __Lectures:__  Engines of SEM: Bayesian SEM
 	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Timseries and Temporal Autocorrelation in SEM  
 	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Whole-System Prediction with SEM  
 	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Composite Variables   
-__Readings:__   Oberski 2014, Grace et al. 2010,
+__Readings:__   [brms and SEM](https://rpubs.com/jebyrnes/brms_bayes_sem). [causal model structure and random effects](https://rpubs.com/jebyrnes/causal_mods)
 \
 \
 
