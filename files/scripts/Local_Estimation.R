@@ -8,6 +8,39 @@
 library(dagitty)
 
 g <- dagitty("dag{
+  x1 -> y1
+  x1 -> y2
+  x1 -> y3
+  y3 -> y4
+  y2 -> y4
+  y1 -> y4
+  y2 -> y1
+             }")
+
+#conditional independence relationships
+impliedConditionalIndependencies(g)
+
+
+
+# My Model
+forest_mod <-  dagitty("dag{
+  	waves -> kelp -> algae  
+	  algae -> inverts
+  	waves -> algae
+}")
+
+
+plot(graphLayout(forest_mod))
+
+adjustmentSets(forest_mod, 
+               exposure = "kelp", 
+               outcome = "inverts")
+
+#conditional independence relationships
+impliedConditionalIndependencies(forest_mod)
+
+
+g <- dagitty("dag{
   pesticide -> caprellids <- macroalgae
   pesticide -> gammarids <- macroalgae
   caprellids -> epiphytes <- gammarids
@@ -128,6 +161,26 @@ rsquared(keeley.sem2)
 # Get all summary information
 summary(keeley.sem2)
 
+#plot the model
+plot(keeley.sem2)
+
+#make a better plot
+keeley.plot2 <- plot(keeley.sem2, return=TRUE)
+
+#what's in there?
+get_node_df(keeley.plot2)
+
+keeley.plot2 %>%
+  set_node_attrs(node_attr = x, values = c(2.5,2.5,4,1)) %>%
+  set_node_attrs(node_attr = y, values = c(3,1,2,2)) %>%
+  render_graph()
+
+#or...
+plot(keeley.sem2,
+     node_attrs = list(x = c(2.5,2.5,4,1),
+                       y = c(3,1,2,2),
+                       shape = "rectangle", fillcolor = "white"))
+
 # Evaluate individual model assumptions & fits
 
 # Graphical evaluation
@@ -186,69 +239,57 @@ AIC(keeley.sem2)
 AIC(keeley.sem4)
 
 ### Get partial correlation plot
-dev.off()
 
 # Plot raw data
 plot(rich ~ distance, keeley)
 
-# Add trendline & 95% CIs
-newdata.raw <- data.frame(distance =
-                        seq(min(keeley[, 1], na.rm = TRUE) - min(keeley[, 1], na.rm = TRUE) * 0.1,
-                            max(keeley[, 1], na.rm = TRUE) + min(keeley[, 1], na.rm = TRUE) * 0.1,
-                            length.out = nrow(keeley) * 2) )
+#psem objects are lists of models
+keeley.sem2[[3]]
+
+#Added Variable Plots
+library(car)
+
+avPlot(keeley.sem2[[3]], variable = "distance")
 
 
-mod.raw <- lm(rich ~ distance, data = keeley)
+#CR Plots
+crPlot(keeley.sem2[[3]], variable = "distance",
+       smooth = FALSE)
 
-pred.raw <- predict(mod.raw, newdata.raw, interval = "confidence", level = 0.95)
+#visreg
+library(visreg)
 
-abline(mod.raw, col = "red", lwd = 2)
+visreg(keeley.sem2[[3]], 
+       xvar = "distance")
 
-lines(newdata.raw[, 1], pred.raw[, 2], col = "red", lwd = 1.8, lty = 2)
+vr <- visreg(keeley.sem2[[3]], 
+             xvar = "distance")
 
-lines(newdata.raw[, 1], pred.raw[, 3], col = "red", lwd = 1.8, lty = 2)
-
-# Plot residuals
-resids <- partialResid(rich ~ distance, keeley.sem2)
-
-
-# Add trendline & 95% CIs
-newdata <- data.frame(xresid =
-                        seq(min(resids[, 2], na.rm = TRUE) - min(resids[, 2], na.rm = TRUE) * 0.1,
-                            max(resids[, 2], na.rm = TRUE) + min(resids[, 2], na.rm = TRUE) * 0.1,
-                            length.out = nrow(resids) * 2) )
+head(vr$res)
 
 
-#Partial Resid Plot
-mod.resid <- lm(yresid ~ xresid, data = resids)
+visreg(keeley.sem2[[3]], 
+       xvar = "distance",
+       gg=TRUE) + ggthemes::theme_par()
 
-plot(yresid ~ xresid, xlab = "distance | others", ylab = "rich | others", data = resids)
+#Final Exercise
+fullMed <- psem(
+  lm(cover ~ firesev, data = keeley),
+  lm(firesev ~ age, data = keeley),
+  keeley)
+)
 
-abline(mod.resid, col="red", lwd=2)
+noMed <- psem(
+  lm(firesev ~ age, data = keeley),
+  lm(cover ~ age, data = keeley),
+  data = keeley)
 
-#CIs
-pred <- predict(mod.resid, newdata, interval = "confidence", level = 0.95)
+anova(fullMed, noMed)
 
-
-lines(newdata[, 1], pred[, 2], col = "red", lwd = 1.8, lty = 2)
-
-lines(newdata[, 1], pred[, 3], col = "red", lwd = 1.8, lty = 2)
-
-
-#crPlots
-
-plot(keeley$distance, pr$yresid, 
-     xlab = "distance ", ylab = "rich | others")
-cr.mod <- lm(yresid ~ distance, 
-             data = data.frame(yresid=resids$yresid, distance=keeley$distance))
-abline(cr.mod, col="red", lwd=2)
-
-abline(mod.resid, col="red", lwd=2)
-
-
-library(ggplot2)
-ggplot(keeley, aes(x=keeley$distance, y = resids$yresid)) +
-  geom_point() +
-  stat_smooth(method="lm") +
-  xlab("distance") + ylab("rich | others") +
-  theme_bw(base_size=17)
+#visualize
+partialMed <- psem(
+  lm(firesev ~ age, data = keeley),
+  lm(cover ~ age + firesev, data = keeley),
+  data = keeley)
+  
+visreg(partialMed[[2]], xvar = "firesev")

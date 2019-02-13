@@ -1,4 +1,43 @@
-library(DiagrammeR)
+#' Plotting Path Models of Piecewise Structural Equation Models
+#' 
+#' @description plot.psem uses [DiagrammeR] to generate path diagrams 
+#' of `piecewiseSEM`` fits within R.
+#' 
+#' @param mod a [psem()] object
+#' @param return whether to return the output from [DiagrammeR::create_graph()] for modification and later plotting
+#' @param node_attrs List of node attributes to overide defaults of rectangular nodes with black outline and white fill. See [here](http://visualizers.co/diagrammer/articles/node-edge-data-frames.html) and [here](http://visualizers.co/diagrammer/articles/graphviz-mermaid.html) for a more complete rundown of options.
+#' @param edge_attrs List of edge attributes to overide defaults of solid black arrows. See [here](http://visualizers.co/diagrammer/articles/node-edge-data-frames.html) and [here](http://visualizers.co/diagrammer/articles/graphviz-mermaid.html) for a more complete rundown of options.
+#' @param ns_dashed If TRUE, paths that are not different from 0 will be dashed rather than solid, unless the wholse is overridden in `edge_attrs`
+#' @param alpha The alpha level for assessing whether a path is different from 0
+#' @parad show What types of path coefficients are shown? Default `"std"` is standardized coefficients. For undstandardized, use `"unstd"`
+#' @param digits How many significant digits should be shown?
+#' @param add_edge_label_spaces Should spaces by added on either side of edge labels? Default is `TRUE` as otherwise paths too often overlap edges.
+#' @param ... Other arguments to [DiagrammeR::render_graph()]
+#' 
+#' 
+#'@return Returns an object of class [DiagrammeR::dgr_graph]
+#' @author Jarrett Byrnes <jarrett.byrnes@@umb.edu>
+#' 
+#' @examples 
+#' data(keeley)
+#' 
+#' mod <- psem(
+#'   lm(rich ~ cover, data=keeley),
+#'   lm(cover ~ firesev, data=keeley),
+#'   lm(firesev ~ age, data=keeley),
+#'   data = keeley
+#' )
+#' plot.psem(mod)
+#' 
+#' ### More customized plot
+#' keeley_graph <- plot.psem(mod, return=TRUE)
+#' 
+#' plot.psem(mod, node_attrs = list(
+#'   shape = "rectangle", color = "black",
+#'   fillcolor = "orange", x = 3, y=1:4))
+
+#' @imports DiagrammeR
+#' @md
 
 
 plot.psem <- function(mod, return=FALSE,

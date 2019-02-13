@@ -9,6 +9,7 @@ g <- dagitty("dag{
   y3 -> y4
   y2 -> y4
   y1 -> y4
+  y2 -> y1
              }")
 
 #Show us the graph

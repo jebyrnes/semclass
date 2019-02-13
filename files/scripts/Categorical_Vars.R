@@ -49,13 +49,15 @@ coefs(bowen_mod)
 #what do the ANOVAs say?
 anova(bowen_mod)
 
-lapply(bowen_mod[-length(bowen_mod)], fixef)
+#The coefficients
+library(emmeans)
+
+lapply(bowen_mod[-length(bowen_mod)], emmeans, specs = ~status )
 
 
 ###
 # Test of Differences of means
 ###
-library(emmeans)
 
 #Let's look at, posthoc tests
 generic_tukey <- function(x)
@@ -63,11 +65,6 @@ generic_tukey <- function(x)
 
 
 lapply(bowen_mod[-length(bowen_mod)], generic_tukey)
-
-###
-# I hate treatment contrasts
-###
-lapply(bowen_mod[-length(bowen_mod)], fixef)
 
 ####
 ## Multigroup ####
@@ -187,6 +184,8 @@ anova(meadowFitTwoFree, meadowFitFree)
 # Multigroup with piecewiseSEM ###
 ###
 
+meadows$grazed <- factor(meadows$grazed)
+
 #Fully unconstrained model
 rich_unconstrained <- lm(rich ~ elev*grazed + mass * grazed, data=meadows)
 mass_unconstrained <- lm(mass ~ elev * grazed, data=meadows)
@@ -209,9 +208,13 @@ constrained_int_mod <- psem(
   data=meadows
 )
 
+anova(unconstrained_int_mod, constrained_int_mod)
+
 source("./multigroup_margins.R")
 getMargins.psem(unconstrained_int_mod, 
                 at=list(grazed=c(0,1)))
 
 getStdByGroup(unconstrained_int_mod, by = "grazed")
+#####
+
 
