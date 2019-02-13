@@ -30,8 +30,9 @@ __Readings:__  [Grace and Bollen 2005](http://byrneslab.net/classes/sem_pdfs/Gen
 __Overview:__  We move beyond covariance based techniques into local estimation techniques that embrace the graph theoretic approach to SEM via the `piecewiseSEM` package by Jon Lefcheck.  
 __Lectures:__  	[Engines of SEM: Local Estimation with piecewiseSEM](lecture_pdfs/Local_Estimation.pdf), [code](files/scripts/Local_Estimation.R)      
 	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [A Nonlinear, Non-normal world](lecture_pdfs/Nonlinear_nonnormal.pdf), [code](files/scripts/nonlinear_nonnormal.R)      
+	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Categorical Variables and Multigroup Analysis(lecture_pdfs/Categorical_Variables.pdf), [code](files/scripts/Categorical_Vars.R), [multigroup_margins.R](files/scripts/multigroup_margins.R)  
 	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Mixed Models in SEM  
-	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Categorical Variables and Multigroup Analysis  
+  
 __Readings:__  [piecewiseSEM vignette](http://jslefche.github.io/piecewiseSEM/articles/piecewiseSEM.html), [Shipley 2009](http://byrneslab.net//classes/sem_pdfs/d-sep/Shipley%202009%20dsep%20with%20multilevel%20models.pdf), [Lefcheck 2016](http://byrneslab.net//classes/sem_pdfs/d-sep/Lefcheck_2016_piecewiseSEM.pdf)
 \
 \
