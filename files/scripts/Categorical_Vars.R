@@ -78,7 +78,7 @@ meadows<-read.csv("../data/FinnishMeadows_Multigroup.csv")
 ####################################################
 
 
-
+meadows$mass <- meadows$mass/100
 meadowModel<-'rich ~ elev + mass
 mass ~ me*elev'
 
@@ -93,13 +93,24 @@ summary(meadowFit)
 meadowFitFree<-sem(meadowModel, data=meadows, group="grazed")
 coef(meadowFitFree)
 
+
+#compare intercepts
+meadowFitFreeInt<-sem(meadowModel, data=meadows, group="grazed", meanstructure=TRUE)
+
+meadowFitNoGroup<-sem(meadowModel, data=meadows,  meanstructure=TRUE)
+
+meadowFitConstInt<-sem(meadowModel, data=meadows, group="grazed", 
+                       meanstructure=TRUE, group.equal = c("intercepts"))
+summary(meadowFitConstInt)
+
 meadowFitFree
 summary(meadowFitFree)
 
 #introducing constraints
 meadowFitEqual<-sem(meadowModel, data=meadows, 
                     group="grazed", 
-                    group.equal=c( "intercepts","regressions"))
+                    group.equal=c( "intercepts","regressions"),
+                    meanstructure=TRUE)
 
 coef(meadowFitEqual)
 
