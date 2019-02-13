@@ -1,8 +1,10 @@
 ---
 title: "Course Schedule"
 ---
-The general schedule for the course is below. Please note, for readings the u/p is semclass for both. For code, please see [this dropbox](https://www.dropbox.com/sh/objbunt4wxdlnxb/AAB38yRdxi62BlMC1ca_SYPJa?dl=0) for a static view. During the course itself, I'll give you share access so that you can update files as things change. Please [run this script](./files/scripts/Install_Required_Packages.R) in R to install the packages you will need for the course before day 1.
-
+The general schedule for the course is below. Please note, for readings the u/p is semclass for both. For code, please see [this dropbox](https://www.dropbox.com/sh/objbunt4wxdlnxb/AAB38yRdxi62BlMC1ca_SYPJa?dl=0) for a static view. During the course itself, I'll give you share access so that you can update files as things change. Please [run this script](./files/scripts/Install_Required_Packages.R) in R to install the packages you will need for the course before day 1.  
+\
+For the course, we'll also use a number of common data sets which you can download (and put into a data folder) [here](files/data.zip).   
+\
 ## Day 1. Introduction to SEM
 __Overview:__  We discuss just what is SEM. Along the way we'll discuss it's origins, give a general example of moving from a traditional ANOVA-esque framework, and finally discuss how to build a well-justified causal model. Causality will be central, and we won't pull any punches! We'll end the day by starting to talk about how to fit SEMs using likelihood using covariance-based estimation with likelihood.  
 __Lectures:__  [What is SEM? A Practical and Historical Overview](lecture_pdfs/SEM_Intro_And_History.pdf)  
@@ -26,8 +28,8 @@ __Readings:__  [Grace and Bollen 2005](http://byrneslab.net/classes/sem_pdfs/Gen
 
 ## Day 3. Piecewise SEM  
 __Overview:__  We move beyond covariance based techniques into local estimation techniques that embrace the graph theoretic approach to SEM via the `piecewiseSEM` package by Jon Lefcheck.  
-__Lectures:__  	Engines of SEM: Local Estimation with piecewiseSEM  
-	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A Nonlinear, Non-normal world  
+__Lectures:__  	[Engines of SEM: Local Estimation with piecewiseSEM](lecture_pdfs/Local_Estimation.pdf), [code](files/scripts/Local_Estimation.R)      
+	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [A Nonlinear, Non-normal world](lecture_pdfs/Nonlinear_nonnormal.pdf), [code](files/scripts/nonlinear_nonnormal.R)      
 	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Mixed Models in SEM  
 	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Categorical Variables and Multigroup Analysis  
 __Readings:__  [piecewiseSEM vignette](http://jslefche.github.io/piecewiseSEM/articles/piecewiseSEM.html), [Shipley 2009](http://byrneslab.net//classes/sem_pdfs/d-sep/Shipley%202009%20dsep%20with%20multilevel%20models.pdf), [Lefcheck 2016](http://byrneslab.net//classes/sem_pdfs/d-sep/Lefcheck_2016_piecewiseSEM.pdf)

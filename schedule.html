@@ -316,10 +316,11 @@ $(document).ready(function () {
 </div>
 
 
-<p>The general schedule for the course is below. Please note, for readings the u/p is semclass for both. For code, please see <a href="https://www.dropbox.com/sh/objbunt4wxdlnxb/AAB38yRdxi62BlMC1ca_SYPJa?dl=0">this dropbox</a> for a static view. During the course itself, I’ll give you share access so that you can update files as things change. Please <a href="./files/scripts/Install_Required_Packages.R">run this script</a> in R to install the packages you will need for the course before day 1.</p>
-<div id="day-1.-introduction-to-sem" class="section level2">
-<h2>Day 1. Introduction to SEM</h2>
-<p><strong>Overview:</strong> We discuss just what is SEM. Along the way we’ll discuss it’s origins, give a general example of moving from a traditional ANOVA-esque framework, and finally discuss how to build a well-justified causal model. Causality will be central, and we won’t pull any punches! We’ll end the day by starting to talk about how to fit SEMs using likelihood using covariance-based estimation with likelihood.<br />
+<p>The general schedule for the course is below. Please note, for readings the u/p is semclass for both. For code, please see <a href="https://www.dropbox.com/sh/objbunt4wxdlnxb/AAB38yRdxi62BlMC1ca_SYPJa?dl=0">this dropbox</a> for a static view. During the course itself, I’ll give you share access so that you can update files as things change. Please <a href="./files/scripts/Install_Required_Packages.R">run this script</a> in R to install the packages you will need for the course before day 1.<br />
+<br />
+For the course, we’ll also use a number of common data sets which you can download (and put into a data folder) <a href="files/data.zip">here</a>.<br />
+<br />
+## Day 1. Introduction to SEM <strong>Overview:</strong> We discuss just what is SEM. Along the way we’ll discuss it’s origins, give a general example of moving from a traditional ANOVA-esque framework, and finally discuss how to build a well-justified causal model. Causality will be central, and we won’t pull any punches! We’ll end the day by starting to talk about how to fit SEMs using likelihood using covariance-based estimation with likelihood.<br />
 <strong>Lectures:</strong> <a href="lecture_pdfs/SEM_Intro_And_History.pdf">What is SEM? A Practical and Historical Overview</a><br />
             <a href="lecture_pdfs/Anatomy_of_SEM.pdf">Anatomy of SEM</a><br />
             <a href="lecture_pdfs/Multivariate_Causal_Models.pdf">Building Multivariate Causal Models</a>, <a href="files/scripts/multivariate_causal_models.R">code</a><br />
@@ -327,7 +328,6 @@ $(document).ready(function () {
 <strong>Optional Reading:</strong> <a href="http://byrneslab.net/classes/sem_pdfs/General/Matsueda%202012%20history.pdf">Matsueda 2012</a> (history), <a href="http://byrneslab.net/classes/sem_pdfs/causality/pearl-causality-review.pdf">Pearl 2012a</a> (history of causality)<br />
 <br />
 </p>
-</div>
 <div id="day-2.-covariance-based-sem" class="section level2">
 <h2>Day 2. Covariance Based SEM</h2>
 <p><strong>Overview:</strong> We’ll pick up where we left off discussing covariance-based estimation. We’ll spend time discussing how we evaluate an SEM and what we report. We’ll end the day exploring the concept of latent variables - variables for which we do not actually have a measured variable, but for which we have one or more indicators.<br />
@@ -341,8 +341,8 @@ $(document).ready(function () {
 <div id="day-3.-piecewise-sem" class="section level2">
 <h2>Day 3. Piecewise SEM</h2>
 <p><strong>Overview:</strong> We move beyond covariance based techniques into local estimation techniques that embrace the graph theoretic approach to SEM via the <code>piecewiseSEM</code> package by Jon Lefcheck.<br />
-<strong>Lectures:</strong> Engines of SEM: Local Estimation with piecewiseSEM<br />
-            A Nonlinear, Non-normal world<br />
+<strong>Lectures:</strong> <a href="lecture_pdfs/Local_Estimation.pdf">Engines of SEM: Local Estimation with piecewiseSEM</a>, <a href="files/scripts/Local_Estimation.R">code</a><br />
+            <a href="lecture_pdfs/Nonlinear_nonnormal.pdf">A Nonlinear, Non-normal world</a>, <a href="files/scripts/nonlinear_nonnormal.R">code</a><br />
             Mixed Models in SEM<br />
             Categorical Variables and Multigroup Analysis<br />
 <strong>Readings:</strong> <a href="http://jslefche.github.io/piecewiseSEM/articles/piecewiseSEM.html">piecewiseSEM vignette</a>, <a href="http://byrneslab.net//classes/sem_pdfs/d-sep/Shipley%202009%20dsep%20with%20multilevel%20models.pdf">Shipley 2009</a>, <a href="http://byrneslab.net//classes/sem_pdfs/d-sep/Lefcheck_2016_piecewiseSEM.pdf">Lefcheck 2016</a><br />
