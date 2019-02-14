@@ -185,29 +185,53 @@ rsquared(fm1)
 # Load data
 shipley <- read.csv("../Data/shipley.csv")
 
+
+# dd_mod <- lme(DD ~ lat, random = ~1|site/tree, na.action = na.omit,
+#     data = shipley)
+# 
+# date_mod <- lme(Date ~ DD, random = ~1|site/tree, na.action = na.omit,
+#     data = shipley)
+# 
+# growth_mod <- lme(Growth ~ Date, random = ~1|site/tree, na.action = na.omit,
+#     data = shipley)
+# 
+# live_mod <- glmer(Live ~ Growth + (1|site) + (1|tree),
+#       family=binomial(link = "logit"), data = shipley) 
+
+#missing values?
+library(visdat)
+vis_dat(shipley)
+
+shipley <- na.omit(shipley)
+vis_dat(shipley)
+
+
+dd_mod <- lmer(DD ~ lat + (1|site/tree), 
+               data = shipley)
+
+date_mod <- lmer(Date ~ DD + (1|site/tree), 
+                 data = shipley)
+
+growth_mod <- lmer(Growth ~ Date + (1|site/tree), 
+                   data = shipley)
+
+live_mod <- glmer(Live ~ Growth + (1|site/tree),
+                  family=binomial(link = "logit"), 
+                  data = shipley)
+
+
 # Create list of structural equations
 shipley.sem <- psem(
-
-  lme(DD ~ lat, random = ~1|site/tree, na.action = na.omit,
-      data = shipley),
-
-  lme(Date ~ DD, random = ~1|site/tree, na.action = na.omit,
-      data = shipley),
-
-  lme(Growth ~ Date, random = ~1|site/tree, na.action = na.omit,
-      data = shipley),
-
-  glmer(Live ~ Growth + (1|site) + (1|tree),
-        family=binomial(link = "logit"), data = shipley), 
-  
+  dd_mod,
+  date_mod,
+  growth_mod,
+  live_mod,
   data = shipley
-  
-  
 
 )
 
 # Get summary
-summary(shipley.sem)
+summary(shipley.sem, conserve = TRUE)
 
 # Plot residuals vs fitted values
 par(mfrow = c(2, 2))

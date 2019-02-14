@@ -161,9 +161,16 @@ ggplot(plotdata, mapping=aes(x=firesev_start, xend = firesev_end,
 
 
 #prediction of second variable
-newdata2 <- expand.grid(firesev = newdata_curve$firesev, cover = as.vector(cover_pred))
+newdata2 <- data.frame(firesev = c(rep(1, nrow(cover_pred_curve)),
+                                   rep(10, nrow(cover_pred_curve))),
+                       cover = c(cover_pred_curve[,1], cover_pred_curve[,2])
+)
 
-newdata2_error <- expand.grid(firesev = newdata_curve$firesev, cover = as.vector(cover_pred_error_curve))
+newdata2_error <- data.frame(firesev = c(rep(1, nrow(cover_pred_error_curve)),
+                                         rep(10, nrow(cover_pred_error_curve))),
+                             cover = c(cover_pred_error_curve[,1], cover_pred_error_curve[,2])
+)
+
 
 rich_pred <- fitted(k_fit_brms, newdata=newdata2,
                     resp = "rich", nsamples = 1000, 
@@ -175,13 +182,29 @@ rich_pred_error <- fitted(k_fit_brms, newdata=newdata2_error,
 
 
 #to minimize excess uncertainty
-rich_pred <- as.matrix(diag(rich_pred))
-rich_pred_error <- as.matrix(diag(rich_pred_error))
+#by remember, there are two predictor values!
+ rich_pred <- c(as.matrix(diag(rich_pred)), as.matrix(diag(rich_pred[,1001:2000])))
+ rich_pred_error <- c(as.matrix(diag(rich_pred_error)), as.matrix(diag(rich_pred_error[,1001:2000])))
 
 #visualize
 par(mfrow=c(1,2))
-plot(density(as.vector(rich_pred)), main = "fitted",
-     xlim = c(25, 65))
-plot(density(as.vector(rich_pred_error)), main = "prediction",
-     xlim = c(25, 65))
+plot(density(as.vector(rich_pred)), main = "fitted")
+plot(density(as.vector(rich_pred_error)), main = "prediction")
 par(mfrow=c(1,1))
+
+#make data frames of predictions using 2 firesev values
+#we use draws to show separate draws of parameters from posterior
+plot_rich <- cbind(newdata2, data.frame(rich = rich_pred, draws = c(1:1000, 1:1000)))
+plot_error<- cbind(newdata2, data.frame(rich = rich_pred_error, draws = c(1:1000, 1:1000)))
+plot_median <- data.frame(cbind(firesev = c(1,10), 
+                                draws = 1,
+                                rich = c(median(rich_pred[1:1000]), median(rich_pred[1001:2000]))))
+
+
+#plot it!
+ggplot(plot_error, aes(x = firesev, y = rich, group = draws)) +
+  geom_line(alpha = 0.1, color = "black") +
+  geom_line(data = plot_rich, color = "lightblue", alpha = 0.1) +
+  geom_line(data = plot_median, color = "red", size = 1.5) +
+  theme_bw(base_size=17) +
+  xlab("firesev") + ylab("cover")

@@ -38,11 +38,11 @@ __Readings:__  [piecewiseSEM vignette](http://jslefche.github.io/piecewiseSEM/ar
 
 ## Day 4. Special Topics in SEM  
 __Overview:__  This day varies quite a bit, depending on the current class. It's a potpurri of more advances topics, not all of which will be covered.  
-__Lectures:__  Engines of SEM: Bayesian SEM  
-	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Spatial Data in SEM  
-	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Timseries and Temporal Autocorrelation in SEM  
+__Lectures:__  [Engines of SEM: Bayesian SEM](lecture_pdfs/bayesian_sem.pdf), [code](files/scripts/bayesian_sem.R)  
+	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [Spatial Data in SEM](lecture_pdfs/Spatial_Autocorrelation.pdf), [code](files/scripts/Spatial_autocorrelation.R), [helper functions](files/scripts/residuals.R)   
+	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [Timseries and Temporal Autocorrelation in SEM](lecture_pdfs/Temporal_Autocorrelation.pdf), [code](files/scripts/Temporal_Autocorrelation.R)   
+	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [Composite Variables ](lecture_pdfs/Composite_Variables.pdf), [code](files/scripts/Composites.R)   
 	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Whole-System Prediction with SEM  
-	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Composite Variables   
 __Readings:__   [brms and SEM](https://rpubs.com/jebyrnes/brms_bayes_sem). [causal model structure and random effects](https://rpubs.com/jebyrnes/causal_mods)
 \
 \
